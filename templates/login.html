@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="login-body">
+
+    <!-- Titre -->
+    <div class="login-title">
+        🚍 Transport Nouakchott
+    </div>
+
+    <!-- Carte Login -->
+    <div class="login-card">
+        <h2>Connexion</h2>
+
+        <form method="POST">
+
+            <!-- Choix rôle -->
+            <select name="role" class="input" required>
+                <option value="">Choisir un rôle</option>
+                <option value="client">Client</option>
+                <option value="chauffeur">Chauffeur</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <!-- Email -->
+            <input
+                type="email"
+                name="email"
+                placeholder="Adresse Email"
+                class="input"
+                required
+            >
+
+            <!-- Mot de passe -->
+            <input
+                type="password"
+                name="password"
+                placeholder="Mot de passe"
+                class="input"
+                required
+            >
+
+            <!-- Bouton -->
+            <button class="btn">Se connecter</button>
+
+        </form>
+    </div>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

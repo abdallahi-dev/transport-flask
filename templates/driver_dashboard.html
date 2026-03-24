@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Driver</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+
+<body>
+
+<div class="header">Dashboard Chauffeur</div>
+
+<div class="card">
+    <h3>Itinéraire</h3>
+
+    <div class="stop">
+        <span>Ancien Aéroport</span>
+        <button class="btn">Valider</button>
+    </div>
+
+    <div class="stop">
+        <span>Carrefour Madrid</span>
+        <button class="btn">Valider</button>
+    </div>
+
+    <div class="stop">
+        <span>Université</span>
+        <button class="btn">Valider</button>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Signaler un problème</h3>
+
+    <button class="btn-danger">Panne</button>
+    <button class="btn-danger">Embouteillage</button>
+    <button class="btn-danger">Accident</button>
+</div>
+
+</body>
+</html>

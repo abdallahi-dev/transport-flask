@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+
+<body>
+
+<div class="header">Dashboard Admin</div>
+
+<div class="card">
+    <h3>Gestion du système</h3>
+
+    <div class="admin-links">
+        <a href="/bus">Gestion des Bus</a>
+        <a href="/ligne">Gestion des Lignes</a>
+        <a href="/chauffeur">Gestion des Chauffeurs</a>
+        <a href="/reservation">Réservations</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+
+<body>
+
+<div class="header">Dashboard Client</div>
+
+<div class="card">
+    <h3>Itinéraire du Matin</h3>
+    <p>Ancien Aéroport - 08:00</p>
+    <p>Carrefour Madrid - 08:15</p>
+    <p>Université - 08:45</p>
+</div>
+
+<div class="card">
+    <h3>Réservation</h3>
+
+    <input class="input" placeholder="Station de départ">
+    <input class="input" placeholder="Station d'arrivée">
+    <input class="input" placeholder="Téléphone">
+
+    <button class="btn">Payer (5 MRU)</button>
+</div>
+
+</body>
+</html>
